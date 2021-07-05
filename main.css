@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+
+  margin: 0;
+  padding: 0;
+  background-color: #FFEEDB;
+}
+nav {
+  background-color: #C84B31;
+  font-size: 1.5vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 15vw;
+  height: 100vh;
+  left: 2vw;
+  position: fixed;
+  text-align: center;
+
+  border-left: #0A1D37 solid .5rem;
+  /* border-right: purple solid 0.3rem; */
+}
+.link {
+  padding: 1rem;
+
+  
+}
+.link:hover {
+  background-color: grey;
+  /* cursor: pointer; */
+}
+.border-bottom {
+  border-bottom: #696969 solid 0.1px;
+}
+main {
+  font-family: Arial;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+  color: grey;
+  width: 60vw;
+  position: relative;
+  left: 24vw;
+  text-align: left;
+  padding: 5vw;
+}
+.intro {
+  background-color: #0A1D37;
+  color: white;
+  font-size: 1vw;
+  font-style: italic;
+  text-align: left;
+  padding: 0.3vw;
+
+}
+.social{
+  width: 1.5vw;
+  height: 1.5rem;
+  padding: 0.2rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-track {
+  background-color: #FFEEDB;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #C84B31;
+}
