@@ -1,66 +1,114 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-}
+  font-family: sans-serif;
 
-
-#nav {
-    background-color: black;
-    height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffeedb;
 }
+nav {
+  background-color: #c84b31;
+  font-size: 1.5vw;
 
-#logo {
-    float: left;/*same thing may also be achived by making #nav also a flexbox and removing float from #logo and #list*/
-    font-size: 30px;
-    padding: 6px 50px;
-    font-weight: bolder;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-#list {
-    display: flex;
-    /* height: 100%; */
-    font-size: 25px;
-    float: right;
-    /* justify-content:space-around; */
-}
-a {
-    color: white;
-    text-decoration: none;
+  width: 15vw;
+  height: 100vh;
+  left: 2vw;
+  position: fixed;
+  text-align: center;
+
+  border-left: #0a1d37 solid 0.5rem;
+  /* border-right: purple solid 0.3rem; */
 }
 .link {
-    padding: 10px 50px;
+  padding: 1rem;
 }
 .link:hover {
-    background-color: grey;
+  background-color: grey;
+  /* cursor: pointer; */
 }
-#toggle{
-    display: none;
+.border-bottom {
+  border-bottom: #696969 solid 0.1px;
 }
+main {
+  font-family: Arial;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+  color: grey;
+  width: 60vw;
+  position: relative;
+  left: 24vw;
+  text-align: left;
+  padding: 5vw;
+}
+.intro {
+  background-color: #0a1d37;
+  color: white;
+  font-size: 1vw;
+  font-style: italic;
+  /* text-align: left; */
+  padding: 0.3vw;
+}
+.social {
+  width: 1.5vw;
+  height: 1.5rem;
+  padding: 0.2rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.contact{
+  display: none;
+}
+
 @media only screen and (max-width: 700px) {
-    body{
-        /* background-color: red; */
-    }
-    #list{
-        display:none;
-        position: absolute;
-        flex-direction: column;
-        background-color: black;
-        margin-left: 50%;/*or just make width 100% and remove margin left*/
-        width: 50%;
-        height: 100%;
-        text-align: center; 
-        text-decoration: underline;
-    }
-    #list.active{/*this active slass is used in javascript to toggle the menu*/
-        display: flex;
-        margin-top: 50px;/*same as nav height*/
-    }
-    #toggle{
-        float: right;
-        display: block;
-    }
-    #logo{
-        padding: 6px 10px;
-    }
+  nav {
+    /* display: none; */
+    flex-direction: row;
+    width: 100%;
+    left: auto;
+    height: 15vh;
+    border: none;
+    z-index: 1000;
+    /* justify-content: stretch; */
+    align-items: center;
+    bottom: 0%;
+    font-weight: bolder;
+
+  }
+  main {
+    left: auto;
+    width: 90vw;
+    margin-bottom: 15vh;
+    
+  }
+  h2{
+    text-align: center;
+  }
+
+  .intro{
+    display: none;
+  }
+  .link {
+    font-size: 3em;
+  }
+
+  .contact{
+    display: block;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-track {
+  background-color: #ffeedb;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #c84b31;
 }
