@@ -1,75 +1,66 @@
 body {
-  font-family: sans-serif;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-  margin: 0;
-  padding: 0;
-  background-color: #FFEEDB;
-}
-nav {
-  background-color: #C84B31;
-  font-size: 1.5vw;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#nav {
+    background-color: black;
+    height: 50px;
+}
 
-  width: 15vw;
-  height: 100vh;
-  left: 2vw;
-  position: fixed;
-  text-align: center;
+#logo {
+    float: left;/*same thing may also be achived by making #nav also a flexbox and removing float from #logo and #list*/
+    font-size: 30px;
+    padding: 6px 50px;
+    font-weight: bolder;
+}
 
-  border-left: #0A1D37 solid .5rem;
-  /* border-right: purple solid 0.3rem; */
-}
-.link {
-  padding: 1rem;
-
-  
-}
-.link:hover {
-  background-color: grey;
-  /* cursor: pointer; */
-}
-.border-bottom {
-  border-bottom: #696969 solid 0.1px;
-}
-main {
-  font-family: Arial;
-  font-weight: lighter;
-  letter-spacing: 0.1rem;
-  color: grey;
-  width: 60vw;
-  position: relative;
-  left: 24vw;
-  text-align: left;
-  padding: 5vw;
-}
-.intro {
-  background-color: #0A1D37;
-  color: white;
-  font-size: 1vw;
-  font-style: italic;
-/*   text-align: left; */
-  padding: 0.3vw;
-
-}
-.social{
-  width: 1.5vw;
-  height: 1.5rem;
-  padding: 0.2rem;
+#list {
+    display: flex;
+    /* height: 100%; */
+    font-size: 25px;
+    float: right;
+    /* justify-content:space-around; */
 }
 a {
-  text-decoration: none;
-  color: white;
+    color: white;
+    text-decoration: none;
 }
-
-body::-webkit-scrollbar {
-  width: 0.5em;
+.link {
+    padding: 10px 50px;
 }
-body::-webkit-scrollbar-track {
-  background-color: #FFEEDB;
+.link:hover {
+    background-color: grey;
 }
-body::-webkit-scrollbar-thumb {
-  background-color: #C84B31;
+#toggle{
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+    body{
+        /* background-color: red; */
+    }
+    #list{
+        display:none;
+        position: absolute;
+        flex-direction: column;
+        background-color: black;
+        margin-left: 50%;/*or just make width 100% and remove margin left*/
+        width: 50%;
+        height: 100%;
+        text-align: center; 
+        text-decoration: underline;
+    }
+    #list.active{/*this active slass is used in javascript to toggle the menu*/
+        display: flex;
+        margin-top: 50px;/*same as nav height*/
+    }
+    #toggle{
+        float: right;
+        display: block;
+    }
+    #logo{
+        padding: 6px 10px;
+    }
 }
