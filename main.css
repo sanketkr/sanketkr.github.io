@@ -3,10 +3,10 @@ body {
 
   margin: 0;
   padding: 0;
-  background-color: #FFEEDB;
+  background-color: #ffeedb;
 }
 nav {
-  background-color: #C84B31;
+  background-color: #c84b31;
   font-size: 1.5vw;
 
   display: flex;
@@ -19,13 +19,11 @@ nav {
   position: fixed;
   text-align: center;
 
-  border-left: #0A1D37 solid .5rem;
+  border-left: #0a1d37 solid 0.5rem;
   /* border-right: purple solid 0.3rem; */
 }
 .link {
   padding: 1rem;
-
-  
 }
 .link:hover {
   background-color: grey;
@@ -46,15 +44,14 @@ main {
   padding: 5vw;
 }
 .intro {
-  background-color: #0A1D37;
+  background-color: #0a1d37;
   color: white;
   font-size: 1vw;
   font-style: italic;
-  text-align: left;
+  /* text-align: left; */
   padding: 0.3vw;
-
 }
-.social{
+.social {
   width: 1.5vw;
   height: 1.5rem;
   padding: 0.2rem;
@@ -63,13 +60,57 @@ a {
   text-decoration: none;
   color: white;
 }
+.contact {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    /* display: none; */
+    flex-direction: row;
+    width: 100%;
+    left: auto;
+    height: 15vh;
+    border: none;
+    z-index: 1000;
+    /* justify-content: stretch; */
+    align-items: center;
+    bottom: 0%;
+    font-weight: bolder;
+  }
+  main {
+    left: auto;
+    width: 90vw;
+    margin-bottom: 15vh;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  .intro {
+    display: none;
+  }
+  .link {
+    font-size: 3em;
+  }
+
+  .contact {
+    display: block;
+    font-style: italic;
+    text-align: center;
+  }
+  .contact a {
+    color: #c84b31;
+    font-style: normal;
+  }
+}
 
 body::-webkit-scrollbar {
   width: 0.5em;
 }
 body::-webkit-scrollbar-track {
-  background-color: #FFEEDB;
+  background-color: #ffeedb;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #C84B31;
+  background-color: #c84b31;
 }
