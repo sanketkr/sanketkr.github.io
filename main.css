@@ -60,11 +60,7 @@ a {
   text-decoration: none;
   color: white;
 }
-<<<<<<< HEAD
 .contact {
-=======
-.contact{
->>>>>>> 1c17daf0ca9969bc781cbcdb209a47d2a24a10e0
   display: none;
 }
 
@@ -81,53 +77,32 @@ a {
     align-items: center;
     bottom: 0%;
     font-weight: bolder;
-<<<<<<< HEAD
-=======
-
->>>>>>> 1c17daf0ca9969bc781cbcdb209a47d2a24a10e0
   }
   main {
     left: auto;
     width: 90vw;
     margin-bottom: 15vh;
-<<<<<<< HEAD
   }
   h2 {
     text-align: center;
   }
 
   .intro {
-=======
-    
-  }
-  h2{
-    text-align: center;
-  }
-
-  .intro{
->>>>>>> 1c17daf0ca9969bc781cbcdb209a47d2a24a10e0
     display: none;
   }
   .link {
     font-size: 3em;
   }
 
-<<<<<<< HEAD
   .contact {
-=======
-  .contact{
->>>>>>> 1c17daf0ca9969bc781cbcdb209a47d2a24a10e0
     display: block;
     font-style: italic;
     text-align: center;
   }
-<<<<<<< HEAD
   .contact a {
     color: #c84b31;
     font-style: normal;
   }
-=======
->>>>>>> 1c17daf0ca9969bc781cbcdb209a47d2a24a10e0
 }
 
 body::-webkit-scrollbar {
