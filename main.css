@@ -77,6 +77,7 @@ a {
     align-items: center;
     bottom: 0%;
     font-weight: bolder;
+    background-color: transparent;
   }
   main {
     left: auto;
@@ -92,6 +93,7 @@ a {
   }
   .link {
     font-size: 3em;
+    background-color: #0a1d37;
   }
 
   .contact {
